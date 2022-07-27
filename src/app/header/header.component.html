@@ -1,0 +1,16 @@
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link"
+       [routerLink]="'/characters'"
+       [routerLinkActive]="'active'"
+    >Drip Cringe</a>
+  </li>
+  <!-- directive w/o square bracket is for strings -->
+  <li class="nav-item">
+    <a class="nav-link"
+       routerLink="/new-character"
+       routerLinkActive="active"
+       [routerLinkActiveOptions]="{exact: true}"
+    >New Character</a>
+  </li>
+</ul>
